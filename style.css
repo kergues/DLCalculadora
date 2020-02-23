@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#calculadora {
+	width: 75vw;
+	height: auto;
+    display: flex;
+    flex-direction: column;
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+	background: #9dd2ea;
+	background: linear-gradient(#b1e39e, #4484a2);
+	border-radius: 3px;
+	box-shadow: 0px 4px #4484a2, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+#pantalla {
+	height: 40px;
+	width: 100%;
+	padding: 0 10px;
+	background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	
+	/* Typography */
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+.teclas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teclas button{
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 20%;
+	height: 16%;
+	background: white;
+    border-radius: 3px;
+    border: 1px solid white;
+	margin: 10px 4px 11px 5px;
+    color: #888;
+    font-size: 1.5em;
+    font-weight: bold;
+	line-height: 36px;
+	text-align: center;
+	user-select: none;
+	transition: all 0.2s ease;
+}
+.teclas button:hover{
+    background: turquoise;
+    border: 1px solid turquoise;
+    color:white;
+}
+.teclas button.clear {
+    background:coral;
+    border: 1px solid coral;
+	color: white;
+}
+.teclas button.clear:hover {
+    background:red;
+    border: 1px solid red;
+	color: white;
+}
+.teclas button.eval {
+    background: #24d14c;
+    border: 1px solid #24d14c;
+	color: white;
+}
+.teclas button.eval:hover {
+    background: green;
+    border: 1px solid green;
+	color: white;
+}
+@media (min-width:628px){
+    #calculadora{
+        width: 35vw;
+    }
+}
+@media (min-width:880px){
+    #calculadora{
+        width: 25vw;
+    }
+}
